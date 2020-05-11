@@ -2,4 +2,4 @@
     Easy copy paste of common design patterns for javascript
 
 ## Patterns 
-* [Constructor]("constructor/Constructor.js")    
+* [Constructor](constructor/Constructor.js)    
