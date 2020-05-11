@@ -3,3 +3,4 @@
 
 ## Patterns 
 * [Constructor](constructor/Constructor.js)    
+* [Module](Module/Module.js)  
