@@ -1,3 +1,7 @@
+# 19-05-20
+* Add Observe pattern
+* Add Singleton pattern
+
 # 11-05-20
 * Add Constructor pattern
 * Add Module pattern
