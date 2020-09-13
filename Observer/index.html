@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="Observers.js"></script>
+    <script src="Subject.js"></script>
+</head>
+
+<script>
+
+    function State() {
+        this.subject = new Subject();
+        this.value = "";
+    }
+    State.prototype.update = function (newValue) {
+        this.value = newValue;
+        this.subject.notify(newValue);
+    }
+
+    function Observer() {
+        this.update = function (context) {
+            console.log(context);
+        };
+    }
+
+    var state = new State();
+    state.subject.addObserver(new Observer());
+
+
+    state.update("New Value");
+
+
+</script>
