@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="Subscribe.js"></script>
+</head>
+
+<script>
+
+    var mailFunctionality = {};
+    addSubscribeFunctionalities(mailFunctionality);
+
+
+    mailFunctionality.subscribe("new/mail", function (topic, mail) {
+        console.log("Subscriber 1: Received mail", mail.subject);
+    });
+
+    mailFunctionality.subscribe("new/mail", function (topic, mail) {
+        console.log("Subscriber 2: Received mail", mail.subject);
+    });
+
+    mailFunctionality.publish("send/mail");
+
+    mailFunctionality.publish("new/mail", { subject: "Hello there!" });
+
+
+</script>
